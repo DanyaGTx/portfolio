@@ -6,9 +6,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/index.js"></script>
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="welcome">
+      <div class="contianer">
+        <div class="welcome-info">
+          <div class="welcome-info-wrapper">
+            <div class="welcome-info-avatar">
+              <img
+                class="welcome-info-avatar__img"
+                src="./img/avatar2.png"
+                alt=""
+              />
+            </div>
+            <div class="welcome-info-personal">
+              <h1 class="welcome-info-personal__name">Danylo Rakhubovskyi</h1>
+              <h2 class="welcome-info-personal__role">Frontend Engineer</h2>
+              <div class="welcome-info-personal-socials">
+                <div class="welcome-info-personal-socials-item">
+                  <a
+                    target="_blank"
+                    class="welcome-info-personal-socials-item-link"
+                    href="https://github.com/DanyaGTx"
+                  >
+                    <img
+                      class="welcome-info-socials-item-link__img"
+                      src="./img/socials/github.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="welcome-info-socials-item">
+                  <a
+                    target="_blank"
+                    class="welcome-info-socials-item-link"
+                    href="https://www.instagram.com/frontend_motivation/"
+                  >
+                    <img
+                      class="welcome-info-socials-item-link__img"
+                      src="./img/socials/instagram.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="welcome-info-socials-item">
+                  <a
+                    target="_blank"
+                    class="welcome-info-socials-item-link"
+                    href="https://www.linkedin.com/in/danila-rakhubovskyi/"
+                  >
+                    <img
+                      class="welcome-info-socials-item-link__img"
+                      src="./img/socials/linkedin.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="welcome-text">
+            Hello, my name is Danila, and I'm a frontend developer with a
+            passion for creating beautiful and intuitive web experiences. I have
+            been developing for about 3 years. In addition to my love for
+            coding, I'm also an avid BMX rider and enjoy staying active through
+            sports and fitness. I believe in the power of technology to make the
+            world a better place, and I'm always looking for new and exciting
+            ways to use my skills to create meaningful solutions. Thanks for
+            stopping by and getting to know me a little better!
+          </div>
+        </div>
+        <div class="profile-buttons">
+          <div class="profile-buttons-download">
+            <button onclick="downloadCV()" class="profile-buttons-download-btn">
+              Download CV
+              <img src="./img/download-icon.svg" alt="download-icon" />
+            </button>
+          </div>
+          <div class="profile-buttons-contact">
+            <button
+              onclick="contactRedirect()"
+              class="profile-buttons-contact-btn"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects">
+      <div class="container">
+        <div class="projects-wrapper">
+          <h2 class="projects__title">Portfolio</h2>
+          <div class="projects-list">
+            <div class="projects-list-item-wrapper">
+              <h3 class="projects-list-item__title">Game Store</h3>
+              <div class="projects-list-item">
+                <div class="projects-list-item-overlay">
+                  <div class="projects-list-item-overlay-content">
+                    <div class="projects-list-item-overlay-content-info">
+                      <p class="projects-list-item-overlay-content-info__text">
+                        This project is a Video Game platform for searching all
+                        video-games in the world.
+                      </p>
+                      <p class="projects-list-item-overlay-content-info__stack">
+                        Stack: Vue3; TypeScript; Pinia; Firebase DB/Auth;
+                        ElementPlusUI; Tailwind
+                      </p>
+                    </div>
+
+                    <div class="projects-list-item-overlay-content-lnk">
+                      <a
+                        target="_blank"
+                        href="https://store-games-vue3.vercel.app/"
+                      >
+                        <img src="./img/link-icon.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projects-list-item__img"
+                  src="./img/projects/game-store.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="projects-list-item-wrapper">
+              <h3 class="projects-list-item__title">PlaySmart</h3>
+              <div class="projects-list-item">
+                <div class="projects-list-item-overlay">
+                  <div class="projects-list-item-overlay-content">
+                    <div class="projects-list-item-overlay-content-info">
+                      <p class="projects-list-item-overlay-content-info__text">
+                        This project is a Jewish Toy Shop. Worked with RTL
+                        project
+                      </p>
+                      <p class="projects-list-item-overlay-content-info__stack">
+                        Stack: HTML; SCSS; JS; Gulp;
+                      </p>
+                    </div>
+
+                    <div class="projects-list-item-overlay-content-lnk">
+                      <a target="_blank" href="https://www.play-smart.co.il/">
+                        <img src="./img/link-icon.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projects-list-item__img"
+                  src="./img/projects/playsmart.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="projects-list-item-wrapper">
+              <h3 class="projects-list-item__title">Stack Exchange</h3>
+              <div class="projects-list-item">
+                <div class="projects-list-item-overlay">
+                  <div class="projects-list-item-overlay-content">
+                    <div class="projects-list-item-overlay-content-info">
+                      <p class="projects-list-item-overlay-content-info__text">
+                        This is like stack overflow. You can search issues from
+                        other users and look answers :)
+                      </p>
+                      <p class="projects-list-item-overlay-content-info__stack">
+                        Stack: Vue3; Tailwind; ElementPlusUI;
+                      </p>
+                    </div>
+
+                    <div class="projects-list-item-overlay-content-lnk">
+                      <a
+                        target="_blank"
+                        href="https://stackexchange-vue3.vercel.app"
+                      >
+                        <img src="./img/link-icon.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projects-list-item__img"
+                  src="./img/projects/stack-overflow.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="projects-list-item-wrapper">
+              <h3 class="projects-list-item__title">Parsel Department</h3>
+              <div class="projects-list-item">
+                <div class="projects-list-item-overlay">
+                  <div class="projects-list-item-overlay-content">
+                    <div class="projects-list-item-overlay-content-info">
+                      <p class="projects-list-item-overlay-content-info__text">
+                        In this project, you can create orders, view orders and
+                        delete/change your orders.
+                      </p>
+                      <p class="projects-list-item-overlay-content-info__stack">
+                        Stack: Vue3; Tailwind; ElementPlusUI;
+                      </p>
+                    </div>
+
+                    <div class="projects-list-item-overlay-content-lnk">
+                      <a
+                        target="_blank"
+                        href="https://parsel-departament.vercel.app/"
+                      >
+                        <img src="./img/link-icon.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projects-list-item__img"
+                  src="./img/projects/parsel-department.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="projects-list-item-wrapper">
+              <h3 class="projects-list-item__title">Yoga</h3>
+              <div class="projects-list-item">
+                <div class="projects-list-item-overlay">
+                  <div class="projects-list-item-overlay-content">
+                    <div class="projects-list-item-overlay-content-info">
+                      <p class="projects-list-item-overlay-content-info__text">
+                        Responsive Yoga Template
+                      </p>
+                      <p class="projects-list-item-overlay-content-info__stack">
+                        Stack: HTML; CSS; Jquery;
+                      </p>
+                    </div>
+
+                    <div class="projects-list-item-overlay-content-lnk">
+                      <a
+                        target="_blank"
+                        href="https://danyagtx.github.io/Yoga-template.github.io/"
+                      >
+                        <img src="./img/link-icon.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="projects-list-item__img"
+                  src="./img/projects/yoga.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
