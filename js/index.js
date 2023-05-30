@@ -8,3 +8,18 @@ const contactRedirect = () => {
     window.location.href= tgLink
 }
 
+
+
+const projectsList = document.querySelector('.projects-list');
+
+function checkIfReachedProjectsList() {
+
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > 45) {
+    projectsList.classList.add('animate__fadeInUp')
+    console.log('достигли');
+  }
+}
+
+window.addEventListener('scroll', checkIfReachedProjectsList);
