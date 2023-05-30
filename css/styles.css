@@ -154,6 +154,7 @@ body {
   max-width: 500px;
   margin: 0px auto;
   position: relative;
+  cursor: pointer;
 }
 
 .projects-list-item-overlay {
@@ -177,7 +178,7 @@ body {
 }
 
 .projects-list-item-overlay-content {
-  height: 180px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,10 +190,10 @@ body {
   line-height: 22px;
   font-size: 18px;
 }
-
+/* 
 .projects-list-item:hover .projects-list-item-overlay {
   opacity: 1;
-}
+} */
 
 .projects-list-item__img {
   max-width: 400px;
@@ -237,6 +238,10 @@ body {
   .profile-buttons-download-btn,
   .profile-buttons-contact-btn {
     padding: 24px 0px;
+  }
+
+  .welcome {
+    margin-top: 0px;
   }
 }
 

@@ -8,6 +8,24 @@ const contactRedirect = () => {
     window.location.href= tgLink
 }
 
+const projectItems = document.querySelectorAll('.projects-list-item');
+const overlayItems = document.querySelectorAll('.projects-list-item-overlay');
+let activeIndex = null;
+
+for (let i = 0; i < projectItems.length; i++) {
+  projectItems[i].addEventListener('click', () => {
+    if (activeIndex !== null && activeIndex !== i) {
+      overlayItems[activeIndex].style.opacity = 0;
+    }
+    if (overlayItems[i].style.opacity === '1') {
+      overlayItems[i].style.opacity = 0;
+      activeIndex = null;
+    } else {
+      overlayItems[i].style.opacity = 1;
+      activeIndex = i;
+    }
+  });
+}
 
 
 const projectsList = document.querySelector('.projects-list');
