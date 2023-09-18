@@ -3,11 +3,6 @@ const downloadCV = () => {
     window.location.href= resumeLink
 }
 
-const contactRedirect = () => {
-  const tgLink = "https://t.me/teresheyn";
-  window.open(tgLink, "_blank");
-}
-
 const projectItems = document.querySelectorAll('.projects-list-item');
 const overlayItems = document.querySelectorAll('.projects-list-item-overlay');
 let activeIndex = null;
