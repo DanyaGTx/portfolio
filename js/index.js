@@ -1,11 +1,6 @@
 const downloadCV = () => {
-    const resumeLink = "https://drive.usercontent.google.com/uc?id=1bUov6uJJHmSaou_PTkKH7VoqSQfVqSBo&authuser=0&export=download"
+    const resumeLink = "https://drive.google.com/u/0/uc?id=1bUov6uJJHmSaou_PTkKH7VoqSQfVqSBo&authuser=0&export=download"
     window.location.href= resumeLink
-}
-
-const contactRedirect = () => {
-  const tgLink = "https://t.me/teresheyn";
-  window.open(tgLink, "_blank");
 }
 
 const projectItems = document.querySelectorAll('.projects-list-item');
