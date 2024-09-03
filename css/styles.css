@@ -221,8 +221,7 @@ body {
 }
 
 .projects-list-item__img {
-  max-width: 400px;
-  width: 100%;
+  width: 400px;
   height: 230px;
   border-radius: 15px;
   object-fit: cover;
@@ -247,7 +246,7 @@ body {
 
   .projects-list-item__img {
     height: 100%;
-    max-width: none;
+    width: 100% !important;
   }
 
   .projects-list-item {
