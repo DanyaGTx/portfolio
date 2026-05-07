@@ -1,6 +1,6 @@
 const downloadCV = () => {
   const resumeLink =
-    "https://drive.usercontent.google.com/uc?id=1T2JqDQZSQ5VbvOfJVGSeULMiJYeD-9Up&authuser=0&export=download";
+    "https://drive.usercontent.google.com/uc?id=13rgl6aMh2HVwIgj-fE4WqnbhJIKBBZyk&authuser=0&export=download";
   window.location.href = resumeLink;
 };
 
